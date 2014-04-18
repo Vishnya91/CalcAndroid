@@ -1,6 +1,7 @@
 package com.yasya.calcandroid.calc.test.test;
 
 import android.test.ActivityInstrumentationTestCase2;
+import android.test.suitebuilder.annotation.LargeTest;
 import android.test.suitebuilder.annotation.SmallTest;
 import android.widget.EditText;
 
@@ -26,14 +27,14 @@ public class CalculatorActivityTest extends
         //solo.finishOpenedActivities();
     }
 
-    @SmallTest
+
     protected void tearDown() throws Exception {
         /*EditText FirsteditText = (EditText) solo.getView(R.id.editText1);
 		solo.clearEditText(FirsteditText);*/
         solo.finishOpenedActivities();
     }
 
-    @SmallTest
+    @LargeTest
     public void testDisplayWhiteBox_sum() {
 
         int firstNumber = 10;
@@ -56,7 +57,7 @@ public class CalculatorActivityTest extends
         assertEquals(String.valueOf(result), outputField.getText().toString());
     }
 
-    @SmallTest
+    @LargeTest
     public void testDisplayWhiteBox_minus() {
 
         int firstNumber = 20;
@@ -79,7 +80,7 @@ public class CalculatorActivityTest extends
         assertEquals(String.valueOf(result), outputField.getText().toString());
     }
 
-    @SmallTest
+    @LargeTest
     public void testDisplayWhiteBox_div() {
 
         int firstNumber = 10;
@@ -102,7 +103,7 @@ public class CalculatorActivityTest extends
         assertEquals(String.valueOf(result), outputField.getText().toString());
     }
 
-    @SmallTest
+    @LargeTest
     public void testDisplayWhiteBox_divZero() throws ArithmeticException {
         try {
             int firstNumber = 10;
@@ -123,7 +124,7 @@ public class CalculatorActivityTest extends
         }
     }
 
-    @SmallTest
+    @LargeTest
     public void testDisplayWhiteBox_mul() {
 
         int firstNumber = 10;
@@ -146,7 +147,7 @@ public class CalculatorActivityTest extends
         assertEquals(String.valueOf(result), outputField.getText().toString());
     }
 
-    @SmallTest
+    @LargeTest
     //pressing buttons
     public void testButtonsWhiteBox_sum() {
 
@@ -168,7 +169,7 @@ public class CalculatorActivityTest extends
         assertEquals(String.valueOf(result), outputField.getText().toString());
     }
 
-    @SmallTest
+    @LargeTest
     public void testButtonsWhiteBox_mul() {
 
         int firstNumber = 10;
@@ -189,7 +190,7 @@ public class CalculatorActivityTest extends
         assertEquals(String.valueOf(result), outputField.getText().toString());
     }
 
-    @SmallTest
+    @LargeTest
     public void testButtonsWhiteBox_minus() {
 
         int firstNumber = 20;
@@ -210,7 +211,7 @@ public class CalculatorActivityTest extends
         assertEquals(String.valueOf(result), outputField.getText().toString());
     }
 
-    @SmallTest
+    @LargeTest
     public void testButtonsWhiteBox_div() {
 
         int firstNumber = 10;
@@ -231,7 +232,7 @@ public class CalculatorActivityTest extends
         assertEquals(String.valueOf(result), outputField.getText().toString());
     }
 
-    @SmallTest
+    @LargeTest
     public void testButtonsWhiteBox_divZero() throws ArithmeticException {
         try {
 

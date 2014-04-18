@@ -70,7 +70,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform (8)" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" scope="TEST" name="robotium-solo-5.0.1" level="project" />
+    <orderEntry type="library" exported="" name="robotium-solo-5.0.1" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-19.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-v4-19.1.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="junit-3.8" level="project" />
